@@ -1,0 +1,84 @@
+/******************* 
+*** Reset du CSS ***
+********************/
+
+*,
+a,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+/***************
+*** Générale ***
+****************/
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/**************
+*** Flexbox ***
+***************/
+
+.flex-box {
+  display: flex;
+}
+
+.flex-row {
+  flex-flow: row wrap;
+}
+
+.flex-column {
+  flex-flow: column wrap;
+}
+
+.flex-just-between {
+  justify-content: space-between;
+}
+
+.flex-ali-center {
+  align-items: center;
+}
+
+/**************
+ *** Header ***
+ **************/
+
+.navbar {
+  height: 120px;
+  width: 100%;
+  font-size: 19px;
+}
+
+.img-logo img {
+  width: 60%;
+  margin-left: 20px;
+}
+
+.nav-menu {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  padding: 50px 25px 50px 25px;
+}
+
+/* On réduit le padding top pour permettre l'apparition du border-top */
+.nav-links a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding: 47px 25px 50px 25px;
+}

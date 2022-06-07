@@ -1,0 +1,22 @@
+/***************
+*** Générale ***
+****************/
+
+main {
+  width: 100%;
+}
+
+/**************
+*** Header ***
+**************/
+
+.navbar {
+  justify-content: space-evenly;
+}
+
+/* On réinitialise le padding top parce que le border est bottom */
+.nav-links a:hover {
+  border-bottom: 3px solid #0065fc;
+  border-top: none;
+  padding-top: 50px;
+}
