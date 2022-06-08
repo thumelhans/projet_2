@@ -29,6 +29,10 @@ main {
   margin: 0 auto;
 }
 
+.bck-white {
+  background-color: white;
+}
+
 .bck-grey {
   background-color: #f2f2f2;
 }
@@ -49,8 +53,16 @@ main {
   color: #0065fc;
 }
 
+.color-grey {
+  color: #f2f2f2;
+}
+
 .font-bold {
   font-weight: bold;
+}
+
+.fit-cover {
+  object-fit: cover;
 }
 
 /**************
@@ -65,8 +77,16 @@ main {
   flex-flow: row wrap;
 }
 
+.flex-row-nowrap {
+  flex-flow: row nowrap;
+}
+
 .flex-column {
   flex-flow: column wrap;
+}
+
+.flex-column-nowrap {
+  flex-flow: column nowrap;
 }
 
 .flex-just-between {
@@ -119,6 +139,10 @@ main {
   margin-bottom: 10px;
 }
 
+/* TODO: improve
+    - Les padding et border de la partie recherche (pas aligné)
+*/
+
 .search-form {
   border-radius: 10px;
 }
@@ -135,12 +159,8 @@ main {
   border-right: none;
   border-top: 3px solid #f2f2f2;
   border-bottom: 3px solid #f2f2f2;
-  padding: 7px;
+  padding: 11px 7px 7px 7px;
 }
-
-/* TODO: FIXME 
-        - Fix l'écart entre le btn et le search-field
-*/
 
 .search-btn {
   border: none;
@@ -207,4 +227,115 @@ main {
   padding: 5px 10px;
   border: 2px solid #f2f2f2;
   border-radius: 50%;
+}
+
+/******************
+*** Hébergement ***
+*******************/
+
+#leasing-trend {
+  height: 600px;
+  margin-top: 30px;
+}
+
+.leasing {
+  width: 70%;
+  height: 100%;
+  padding: 0 20px 0 20px;
+  border-radius: 20px;
+  justify-content: space-evenly;
+}
+
+.leasing-container {
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.leasing-title {
+  padding: 20px 0 0 20px;
+}
+
+.leasing-more {
+  padding: 0 0 0 20px;
+}
+
+.leasing-more h3:hover {
+  color: #0065fc;
+}
+
+/****************
+*** Populaire ***
+*****************/
+
+.trend {
+  width: 27%;
+  height: 100%;
+  border-radius: 20px;
+  justify-content: space-evenly;
+}
+
+.trend-title {
+  padding: 20px;
+}
+
+.trend-container {
+  align-items: center;
+  gap: 20px;
+}
+
+.trend-resume {
+  padding-left: 15px;
+}
+
+.trend-resume p {
+  padding-top: 10px;
+}
+
+.image-trend img {
+  height: 120px;
+  width: 100px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/*************
+*** Cartes ***
+**************/
+
+.cards {
+  border-radius: 20px;
+  padding: 5px;
+  /* Box shadow: axe hori | axe verti | flou | distance | (couleur, opacité) */
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.4);
+}
+
+.cards-w33 {
+  width: 30%;
+}
+
+.cards-w100 {
+  width: 100%;
+}
+
+.cards-w80 {
+  width: 80%;
+}
+
+.image-leasing img {
+  height: 115px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.cards-content {
+  padding: 5px 0 0 5px;
+}
+
+.stars {
+  padding-top: 5px;
+}
+
+.trend-stars {
+  padding: 0 0 10px 15px;
 }

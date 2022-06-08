@@ -19,9 +19,7 @@ main {
 .nav-links a:hover {
   border-bottom: 3px solid #0065fc;
   border-top: none;
-  @media screen and (min-width: 768px) {
-    padding-top: 50px;
-  }
+  padding-top: 50px;
 }
 
 /****************
@@ -61,4 +59,29 @@ main {
 .search-footer {
   padding-left: 20px;
   flex-flow: nowrap;
+}
+
+/****************
+*** Populaire ***
+*****************/
+
+#leasing-trend {
+  height: auto;
+  margin: 15px;
+}
+
+.leasing{
+  row-gap: 15px;
+}
+
+.leasing-more{
+  padding-bottom: 15px;
+}
+
+/*************
+*** Cartes ***
+**************/
+
+.cards-w33{
+  width: 40%;
 }

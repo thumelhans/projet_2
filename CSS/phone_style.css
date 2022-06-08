@@ -11,7 +11,6 @@ main {
 **************/
 
 .navbar {
-  height: 90px;
   flex-flow: column wrap;
 }
 
@@ -90,4 +89,38 @@ main {
 .search-footer {
   padding: 20px;
   flex-flow: nowrap;
+}
+
+/****************
+*** Populaire ***
+*****************/
+
+#leasing-trend{
+  height: auto;
+  flex-flow: column-reverse wrap;
+  row-gap: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.leasing{
+  width: 100%;
+  background-color: white;
+}
+
+.trend{
+  width: 100%;
+  border-radius: 0px;
+}
+
+.trend-container{
+  padding-bottom: 20px;
+}
+
+/*************
+*** Cartes ***
+**************/
+
+.cards-w33{
+  width: 100%;
 }
