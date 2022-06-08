@@ -6,11 +6,12 @@ main {
   width: 100%;
 }
 
-/**************
+/*************
 *** Header ***
 **************/
 
 .navbar {
+  height: 100px;
   justify-content: space-evenly;
 }
 
@@ -18,5 +19,46 @@ main {
 .nav-links a:hover {
   border-bottom: 3px solid #0065fc;
   border-top: none;
-  padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+}
+
+/****************
+*** Recherche ***
+*****************/
+
+.search-container {
+  flex-flow: column nowrap;
+  padding: 0;
+}
+
+.search-header {
+  padding-left: 20px;
+}
+
+.search-form {
+  padding-left: 20px;
+}
+
+/*************
+*** Filtre ***
+**************/
+
+.filter-title {
+  float: none;
+  padding-left: 20px;
+}
+
+.filters {
+  padding-left: 20px;
+}
+
+/***********************
+*** Recherche footer ***
+************************/
+
+.search-footer {
+  padding-left: 20px;
+  flex-flow: nowrap;
 }

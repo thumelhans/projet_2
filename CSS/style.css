@@ -29,6 +29,30 @@ main {
   margin: 0 auto;
 }
 
+.bck-grey {
+  background-color: #f2f2f2;
+}
+
+.bck-blue {
+  background-color: #0065fc;
+}
+
+.bck-light-blue {
+  background-color: #deebff;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-blue {
+  color: #0065fc;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
 /**************
 *** Flexbox ***
 ***************/
@@ -53,9 +77,13 @@ main {
   align-items: center;
 }
 
-/**************
- *** Header ***
- **************/
+.flex-gap-20 {
+  gap: 20px;
+}
+
+/*************
+*** Header ***
+**************/
 
 .navbar {
   height: 120px;
@@ -81,4 +109,102 @@ main {
   color: #0065fc;
   border-top: 3px solid #0065fc;
   padding: 47px 25px 50px 25px;
+}
+
+/****************
+*** Recherche ***
+*****************/
+
+.search-header h1 {
+  margin-bottom: 10px;
+}
+
+.search-form {
+  border-radius: 10px;
+}
+
+.map-icon {
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.search-field {
+  height: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: 3px solid #f2f2f2;
+  border-bottom: 3px solid #f2f2f2;
+  padding: 7px;
+}
+
+/* TODO: FIXME 
+        - Fix l'écart entre le btn et le search-field
+*/
+
+.search-btn {
+  border: none;
+  padding: 12px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hidden-icon {
+  display: none;
+}
+
+/*************
+*** Filtre ***
+**************/
+
+.filter-title {
+  float: left;
+  padding: 10px 30px 10px 10px;
+}
+
+.filter-select {
+  border-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+  cursor: pointer;
+  border: 3px solid #f2f2f2;
+  border-left: none;
+}
+
+.icon {
+  font-size: 16px;
+  padding: 11px;
+  border-radius: 30px;
+}
+
+/* On définie une class spéciale car l'icone ne permet pas un rond parfait */
+.icon-child {
+  padding: 11px 13px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.filter-content {
+  padding: 10px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.filter-select:hover {
+  background-color: #deebff;
+  border-color: transparent;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+/***********************
+*** Recherche footer ***
+************************/
+
+.icon-info {
+  padding: 5px 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
 }
