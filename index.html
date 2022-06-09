@@ -1,324 +1,274 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/logo/Booki.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/2247cba2a3.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link
-      rel="stylesheet"
-      media="only screen and (max-width:992px)"
-      href="./CSS/tab_style.css"
-    />
-    <link
-      rel="stylesheet"
-      media="only screen and (max-width: 768px)"
-      href="./CSS/phone_style.css"
-    />
-    <title>Index | Booki</title>
-  </head>
-  <body>
-    <main>
-      <!-- Header & Navbar  -->
-      <header>
-        <nav class="navbar flex-box flex-row flex-just-between flex-ali-center">
-          <div class="img-logo">
-            <a href="index.html"
-              ><img src=".//images/logo/Booki.png" alt="Logo du site Booki"
-            /></a>
-          </div>
-          <ul class="nav-menu flex-box flex-ali-center">
-            <li class="nav-links">
-              <a href="#leasing-trend">Hébergements</a>
-            </li>
-            <li class="nav-links">
-              <a href="">Activités</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
 
-      <!-- Recherche & Filtre -->
-      <section class="search-container flex-box flex-column flex-gap-20">
-        <div class="search-header">
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre ville, ou en pleine nature</p>
-        </div>
-        <div class="search-form flex-box flex-row flex-ali-center">
-          <div class="map-icon bck-grey">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <form action="#" method="post" class="flex-box">
-            <label for="search"></label>
-            <input
-              type="search"
-              class="search-field"
-              name="search"
-              placeholder="Marseille, France"
-            />
-            <button action="#" class="search-btn bck-blue">
-              <div class="hidden-text color-white font-bold">Recherche</div>
-              <i
-                class="fa-solid fa-magnifying-glass color-white hidden-icon"
-              ></i>
-            </button>
-          </form>
-        </div>
-        <div class="filter-container">
-          <div class="filter-title">
-            <h3>Filtres</h3>
-          </div>
-          <div class="filters flex-box flex-row flex-ali-center flex-gap-20">
-            <div class="filter-select flex-box flex-row flex-ali-center">
-              <div class="icon bck-light-blue">
-                <i class="fa-solid fa-money-bill-wave fa-lg color-blue"></i>
-              </div>
-              <div class="filter-content font-bold">
-                <p>Économique</p>
-              </div>
-            </div>
-            <div class="filter-select flex-box flex-row flex-ali-center">
-              <div class="icon icon-child bck-light-blue">
-                <i class="fa-solid fa-child-reaching fa-lg color-blue"></i>
-              </div>
-              <div class="filter-content font-bold">
-                <p>Familial</p>
-              </div>
-            </div>
-            <div class="filter-select flex-box flex-row flex-ali-center">
-              <div class="icon bck-light-blue">
-                <i class="fa-solid fa-heart fa-lg color-blue"></i>
-              </div>
-              <div class="filter-content font-bold">
-                <p>Romantique</p>
-              </div>
-            </div>
-            <div class="filter-select flex-box flex-row flex-ali-center">
-              <div class="icon bck-light-blue">
-                <i class="fa-solid fa-dog fa-lg color-blue"></i>
-              </div>
-              <div class="filter-content font-bold">
-                <p>Animaux autorisés</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="search-footer flex-box flex-row flex-ali-center flex-gap-20"
-        >
-          <div class="icon-info">
-            <i class="fa-solid fa-info color-blue"></i>
-          </div>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/logo/Booki.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/2247cba2a3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" media="only screen and (max-width:992px)" href="./CSS/tab_style.css" />
+  <link rel="stylesheet" media="only screen and (max-width: 768px)" href="./CSS/phone_style.css" />
+  <title>Index | Booki</title>
+</head>
 
-      <!-- Section Hébergement et populaire -->
-      <section
-        id="leasing-trend"
-        class="flex-box flex-row flex-ali-center flex-just-between"
-      > 
-        <div class="leasing bck-grey flex-box flex-column-nowrap">
-          <div class="leasing-title">
-            <h2>Hébergements à Marseille</h2>
-          </div>
-          <div class="leasing-container flex-box flex-row">
-            <div class="cards cards-w33 bck-white">
-              <a href="#">
-                <div class="image-leasing">
-                  <img
-                    class="fit-cover"
-                    src="./images/hebergements/auberge_la_canebiere_hd.jpg"
-                    alt="Photo d'un lit superposé"
-                  />
-                </div>
-                <div class="cards-content">
-                  <h3 class="padding-5">Auberge La Cannebière</h3>
-                  <p class="padding-5">Nuit à partie de <strong>25€</strong></p>
-                  <div class="stars padding-5">
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-grey"></i>
-                  </div>
-                </div>
-              </a>
+<body>
+  <main>
+    <!-- Header & Navbar  -->
+    <header>
+      <nav class="navbar flex-box flex-row flex-just-between flex-ali-center">
+        <div class="img-logo">
+          <a href="index.html"><img src=".//images/logo/Booki.png" alt="Logo du site Booki" /></a>
+        </div>
+        <ul class="nav-menu flex-box flex-ali-center">
+          <li class="nav-links">
+            <a href="#leasing-trend">Hébergements</a>
+          </li>
+          <li class="nav-links">
+            <a href="#activities">Activités</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Recherche & Filtre -->
+    <section class="search-container flex-box flex-column flex-gap-20">
+      <div class="search-header">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville, ou en pleine nature</p>
+      </div>
+      <div class="search-form flex-box flex-row flex-ali-center">
+        <div class="map-icon bck-grey">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <form action="#" method="post" class="flex-box">
+          <label for="search"></label>
+          <input type="search" class="search-field" name="search" placeholder="Marseille, France" />
+          <button action="#" class="search-btn bck-blue">
+            <div class="hidden-text color-white font-bold">Recherche</div>
+            <i class="fa-solid fa-magnifying-glass color-white hidden-icon"></i>
+          </button>
+        </form>
+      </div>
+      <div class="filter-container">
+        <div class="filter-title">
+          <h3>Filtres</h3>
+        </div>
+        <div class="filters flex-box flex-row flex-ali-center flex-gap-20">
+          <div class="filter-select flex-box flex-row flex-ali-center">
+            <div class="icon bck-light-blue">
+              <i class="fa-solid fa-money-bill-wave fa-lg color-blue"></i>
             </div>
-            <div class="cards cards-w33  bck-white">
-              <a href="#">
-                <div class="image-leasing">
-                  <img
-                    class="fit-cover"
-                    src="./images/hebergements/hotel_du_port_hd.jpg"
-                    alt="Photo d'une chambre avec un double lit"
-                  />
-                </div>
-                <div class="cards-content">
-                  <h3>Hôtel du port</h3>
-                  <p>Nuit à partie de <strong>52€</strong></p>
-                  <div class="stars">
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="cards cards-w33 bck-white">
-              <a href="#">
-                <div class="image-leasing">
-                  <img
-                    class="fit-cover"
-                    src="./images/hebergements/hotel_les_mouettes_hd.jpg"
-                    alt="Photo d'un lit avec un dressing et un grand mirroir"
-                  />
-                </div>
-                <div class="cards-content">
-                  <h3>Hôtel Les mouettes</h3>
-                  <p>Nuit à partie de <strong>76€</strong></p>
-                  <div class="stars">
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-grey"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="cards cards-w33  bck-white">
-              <a href="#">
-                <div class="image-leasing">
-                  <img
-                    class="fit-cover"
-                    src="./images/hebergements/hotel_de_la_mer_hd.jpg"
-                    alt="Photo d'un lit double avec une peinture représentant la mer au dessus"
-                  />
-                </div>
-                <div class="cards-content">
-                  <h3>Hôtel de la mer</h3>
-                  <p>Nuit à partie de <strong>46€</strong></p>
-                  <div class="stars">
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-grey"></i>
-                    <i class="fa-solid fa-star color-grey"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="cards cards-w33  bck-white">
-              <a href="#">
-                <div class="image-leasing">
-                  <img
-                    class="fit-cover"
-                    src="./images/hebergements/auberge_le_panier_hd.jpg"
-                    alt="Photo de plusieurs lits superposés en bois"
-                  />
-                </div>
-                <div class="cards-content">
-                  <h3>Auberge Le Pannier</h3>
-                  <p>Nuit à partie de <strong>23€</strong></p>
-                  <div class="stars">
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-grey"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="cards cards-w33  bck-white">
-              <a href="#">
-                <div class="image-leasing">
-                  <img
-                    class="fit-cover"
-                    src="./images/hebergements/hotel_chez_amina_hd.jpg"
-                    alt="Photo d'une chambre simple avec une fenêtre"
-                  />
-                </div>
-                <div class="cards-content">
-                  <h3>Hôtel chez Amina</h3>
-                  <p>Nuit à partie de <strong>96€</strong></pclass=>
-                  <div class="stars">
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                  </div>
-                </div>
-              </a>
+            <div class="filter-content font-bold">
+              <p>Économique</p>
             </div>
           </div>
-          <div class="leasing-more">
+          <div class="filter-select flex-box flex-row flex-ali-center">
+            <div class="icon icon-child bck-light-blue">
+              <i class="fa-solid fa-child-reaching fa-lg color-blue"></i>
+            </div>
+            <div class="filter-content font-bold">
+              <p>Familial</p>
+            </div>
+          </div>
+          <div class="filter-select flex-box flex-row flex-ali-center">
+            <div class="icon bck-light-blue">
+              <i class="fa-solid fa-heart fa-lg color-blue"></i>
+            </div>
+            <div class="filter-content font-bold">
+              <p>Romantique</p>
+            </div>
+          </div>
+          <div class="filter-select flex-box flex-row flex-ali-center">
+            <div class="icon bck-light-blue">
+              <i class="fa-solid fa-dog fa-lg color-blue"></i>
+            </div>
+            <div class="filter-content font-bold">
+              <p>Animaux autorisés</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-footer flex-box flex-row flex-ali-center flex-gap-20">
+        <div class="icon-info">
+          <i class="fa-solid fa-info color-blue"></i>
+        </div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </section>
+
+    <!-- Section Hébergement et populaire -->
+    <section id="leasing-trend" class="flex-box flex-row flex-ali-center flex-just-between">
+      <div class="leasing bck-grey flex-box flex-column-nowrap">
+        <div class="leasing-title">
+          <h2>Hébergements à Marseille</h2>
+        </div>
+        <div class="leasing-container flex-box flex-row">
+          <div class="cards cards-w33 bck-white">
             <a href="#">
-              <h3>Afficher plus</h3>
+              <div class="image-leasing">
+                <img class="fit-cover" src="./images/hebergements/auberge_la_canebiere_hd.jpg"
+                  alt="Photo d'un lit superposé" />
+              </div>
+              <div class="cards-content">
+                <h3 class="padding-5">Auberge La Cannebière</h3>
+                <p class="padding-5">Nuit à partie de <strong>25€</strong></p>
+                <div class="stars padding-5">
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w33  bck-white">
+            <a href="#">
+              <div class="image-leasing">
+                <img class="fit-cover" src="./images/hebergements/hotel_du_port_hd.jpg"
+                  alt="Photo d'une chambre avec un double lit" />
+              </div>
+              <div class="cards-content">
+                <h3>Hôtel du port</h3>
+                <p>Nuit à partie de <strong>52€</strong></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w33 bck-white">
+            <a href="#">
+              <div class="image-leasing">
+                <img class="fit-cover" src="./images/hebergements/hotel_les_mouettes_hd.jpg"
+                  alt="Photo d'un lit avec un dressing et un grand mirroir" />
+              </div>
+              <div class="cards-content">
+                <h3>Hôtel Les mouettes</h3>
+                <p>Nuit à partie de <strong>76€</strong></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w33  bck-white">
+            <a href="#">
+              <div class="image-leasing">
+                <img class="fit-cover" src="./images/hebergements/hotel_de_la_mer_hd.jpg"
+                  alt="Photo d'un lit double avec une peinture représentant la mer au dessus" />
+              </div>
+              <div class="cards-content">
+                <h3>Hôtel de la mer</h3>
+                <p>Nuit à partie de <strong>46€</strong></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-grey"></i>
+                  <i class="fa-solid fa-star color-grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w33  bck-white">
+            <a href="#">
+              <div class="image-leasing">
+                <img class="fit-cover" src="./images/hebergements/auberge_le_panier_hd.jpg"
+                  alt="Photo de plusieurs lits superposés en bois" />
+              </div>
+              <div class="cards-content">
+                <h3>Auberge Le Pannier</h3>
+                <p>Nuit à partie de <strong>23€</strong></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w33  bck-white">
+            <a href="#">
+              <div class="image-leasing">
+                <img class="fit-cover" src="./images/hebergements/hotel_chez_amina_hd.jpg"
+                  alt="Photo d'une chambre simple avec une fenêtre" />
+              </div>
+              <div class="cards-content">
+                <h3>Hôtel chez Amina</h3>
+                <p>Nuit à partie de <strong>96€</strong></pclass=>
+                <div class="stars">
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                  <i class="fa-solid fa-star color-blue"></i>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="trend bck-grey flex-box flex-column">
-          <div class="trend-title flex-box flex-row flex-just-between flex-ali-center">
-            <h2>Les plus populaire</h2>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <div class="trend-container flex-box flex-column">
-            <div class="cards cards-w80 cards-h150 bck-white">
-              <a href="#">
-                <div class="trend-content flex-box flex-row-nowrap">
-                  <div class="image-trend">
-                     <img
-                      class="fit-cover"
-                      src="./images/hebergements/hotel_le_soleil_du_matin_hd.jpg"
-                      alt="Photo de plusieurs lits superposés en bois"
-                    />
-                  </div>
-                  <div class="cards-content pad-l-20 flex-box flex-column flex-just-between">
-                    <div class="trend-resume">
+        <div class="leasing-more">
+          <a href="#">
+            <h3>Afficher plus</h3>
+          </a>
+        </div>
+      </div>
+      <div class="trend bck-grey flex-box flex-column">
+        <div class="trend-title flex-box flex-row flex-just-between flex-ali-center">
+          <h2>Les plus populaire</h2>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="trend-container flex-box flex-column">
+          <div class="cards cards-w80 cards-h150 bck-white">
+            <a href="#">
+              <div class="trend-content flex-box flex-row-nowrap">
+                <div class="image-trend">
+                  <img class="fit-cover" src="./images/hebergements/hotel_le_soleil_du_matin_hd.jpg"
+                    alt="Photo de plusieurs lits superposés en bois" />
+                </div>
+                <div class="cards-content pad-l-20 flex-box flex-column flex-just-between">
+                  <div class="trend-resume">
                     <h3>Hôtel Le soleil du matin</h3>
                     <p>Nuit à partie de <strong>128€</strong></p>
-                    </div>
-                    <div class="trend-stars">
-                      <i class="fa-solid fa-star color-blue"></i>
-                      <i class="fa-solid fa-star color-blue"></i>
-                      <i class="fa-solid fa-star color-blue"></i>
-                      <i class="fa-solid fa-star color-blue"></i>
-                      <i class="fa-solid fa-star color-blue"></i>
-                    </div>
+                  </div>
+                  <div class="trend-stars">
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
                   </div>
                 </div>
-              </a>
-            </div>
-            <div class="cards cards-w80 bck-white">
-              <a href="#">
-                <div class="trend-content flex-box flex-row-nowrap">
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w80 bck-white">
+            <a href="#">
+              <div class="trend-content flex-box flex-row-nowrap">
                 <div class="image-trend">
-                  <img
-                    class="fit-cover"
-                    src="./images/hebergements/au_coeur_de_l_eau_chambres_d_hotes_hd.jpg"
-                    alt="Photo de plusieurs lits superposés en bois"
-                  />
+                  <img class="fit-cover" src="./images/hebergements/au_coeur_de_l_eau_chambres_d_hotes_hd.jpg"
+                    alt="Photo de plusieurs lits superposés en bois" />
                 </div>
                 <div class="cards-content pad-l-20 flex-box flex-column flex-just-between">
                   <div class="trend-resume">
-                  <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                  <p>Nuit à partie de <strong>71€</strong></p>
+                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                    <p>Nuit à partie de <strong>71€</strong></p>
                   </div>
                   <div class="trend-stars">
                     <i class="fa-solid fa-star color-blue"></i>
@@ -329,37 +279,157 @@
                   </div>
                 </div>
               </div>
-              </a>
-            </div>
-            <div class="cards cards-w80 bck-white">
-              <a href="#">
-                <div class="trend-content flex-box flex-row-nowrap">
+            </a>
+          </div>
+          <div class="cards cards-w80 bck-white">
+            <a href="#">
+              <div class="trend-content flex-box flex-row-nowrap">
                 <div class="image-trend">
-                  <img
-                    class="fit-cover"
-                    src="./images/hebergements/hotel_tout_bleu_et_blanc_hd.jpg"
-                    alt="Photo de plusieurs lits superposés en bois"
-                  />
+                  <img class="fit-cover" src="./images/hebergements/hotel_tout_bleu_et_blanc_hd.jpg"
+                    alt="Photo de plusieurs lits superposés en bois" />
                 </div>
                 <div class="cards-content pad-l-20 flex-box flex-column flex-just-between">
                   <div class="trend-resume">
-                  <h3>Hôtel Tout bleu et Blanc</h3>
-                  <p>Nuit à partie de <strong>68€</strong></p>
+                    <h3>Hôtel Tout bleu et Blanc</h3>
+                    <p>Nuit à partie de <strong>68€</strong></p>
                   </div>
                   <div class="trend-stars">
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
                     <i class="fa-solid fa-star color-grey"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
                   </div>
                 </div>
               </div>
-              </a>
-            </div>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+
+    <!-- Section des activités -->
+    <section id="activities">
+      <h2>Activités</h2>
+      <div class="activities-container flex-box flex-row-nowrap">
+        <div class="left flex-box flex-column flex-gap-55 flex-ali-center">
+          <div class="cards cards-w40 padding-0 cards-h400 bck-white">
+            <a href="#">
+              <div class="image-activities img-350">
+                <img class="fit-cover" src="./images/activites/vieux_port_hd.jpg"
+                  alt="Photo du vieux port de Marseille" />
+              </div>
+              <div class="cards-content paddin">
+                <h3>Vieux Port</h3>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w40 padding-0 cards-h200 bck-white">
+            <a href="#">
+              <div class="image-activities img-150">
+                <img class="fit-cover" src="./images/activites/fort_de_pomegues_hd.jpg"
+                  alt="Photo d'une ruine d'un fort maritime'" />
+              </div>
+              <div class="cards-content padding-5">
+                <h3>Fort de Pomègues</h3>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w40 padding-0 bck-white">
+            <a href="#">
+              <div class="image-activities img-100">
+                <img class="fit-cover" src="./images/activites/ile_de_frioul_hd.jpg" alt="Photo de l'île de Frioul" />
+              </div>
+              <div class="cards-content padding-5">
+                <h3>Île de Frioul</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="right flex-box flex-column flex-gap-55 flex-ali-center">
+          <div class="cards cards-h400 padding-0 cards-w40 bck-white">
+            <a href="#">
+              <div class="image-activities img-350">
+                <img class="fit-cover" src="./images/activites/parc_national_des_calanques_hd.jpg"
+                  alt="Photo des Calanques de Marseille" />
+              </div>
+              <div class="cards-content padding-5">
+                <h3>Parc National des Calanques</h3>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w40 padding-0 cards-h200 bck-white">
+            <a href="#">
+              <div class="image-activities img-150">
+                <img class="fit-cover" src="./images/activites/notre_dame_de_la_garde_hd.jpg"
+                  alt="Photo de Notre-Dame-de-la-Garde" />
+              </div>
+              <div class="cards-content padding-5">
+                <h3>Notre-Dame-de-la-Garde</h3>
+              </div>
+            </a>
+          </div>
+          <div class="cards cards-w40 padding-0 bck-white">
+            <a href="#">
+              <div class="image-activities img-100">
+                <img class="fit-cover" src="./images/activites/parc_longchamp_hd.jpg"
+                  alt="Photo d'un bâtiment avec des colonnes" />
+              </div>
+              <div class="cards-content padding-5">
+                <h3>Parc Longchamp</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Partie Footer -->
+  <footer class="footer-container flex-box flex-row flex-gap-70 bck-grey">
+    <div>
+      <h3>
+        A propos
+      </h3>
+      <ul>
+        <li>
+          <a href="#">Fonctionnement du site</a>
+        </li>
+        <li>
+          <a href="#">Conditions générales de vente</a>
+        </li>
+        <li>
+          <a href="#">Données et confidentialité</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>
+        Nos hébergements
+      </h3>
+      <ul>
+        <li>
+          <a href="#">Charte qualité</a>
+        </li>
+        <li>
+          <a href="#">Soumettre votre hôtel</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>
+        Assistance
+      </h3>
+      <ul>
+        <li>
+          <a href="#">Centre d'aide</a>
+        </li>
+        <li>
+          <a href="#">Nous contacter</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

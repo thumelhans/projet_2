@@ -101,6 +101,14 @@ main {
   gap: 20px;
 }
 
+.flex-gap-55 {
+  row-gap: 55px;
+}
+
+.flex-gap-70 {
+  gap: 70px;
+}
+
 /*************
 *** Header ***
 **************/
@@ -339,3 +347,95 @@ main {
 .trend-stars {
   padding: 0 0 10px 15px;
 }
+
+/* TODO: Fix this 
+
+Bug sur le flex de la partie populaire - en dessous de 1280px le flow est pas comme il faut 
+
+*/
+
+/****************
+*** Activités ***
+*****************/
+
+#activities {
+  margin: 20px 0 20px 0;
+  height: 500px;
+}
+
+#activities h2 {
+  padding: 20px 20px 20px 40px;
+}
+
+.activities-container {
+  height: 100%;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+}
+
+.image-activities img {
+  height: 115px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.img-350 img {
+  height: 350px;
+}
+
+.img-150 img {
+  height: 150px;
+}
+
+.img-100 img {
+  height: 100px;
+}
+
+.cards-h200 {
+  height: 200px;
+}
+
+.cards-h400 {
+  height: 400px;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.cards-w40 {
+  width: 40%;
+}
+
+.padding-5 {
+  padding: 10px;
+}
+
+/****************
+*** Activités ***
+*****************/
+
+footer {
+  /* margin-top: 100px; */
+  padding: 40px 40px 40px 120px;
+}
+
+.footer-container {
+  max-width: 1920px;
+}
+
+/* TODO: FIXIT
+          
+        Bug H3 sur les écrans intermédiaire dans la partie activities
+        
+        Faire la partie responsive d'activities et footer
+        */
