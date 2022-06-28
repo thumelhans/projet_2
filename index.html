@@ -47,10 +47,13 @@
         </div>
         <form action="#" method="post" class="flex-box">
           <label for="search"></label>
-          <input type="search" class="search-field" name="search" placeholder="Marseille, France" />
-          <button action="#" class="search-btn bck-blue">
-            <div class="hidden-text color-white font-bold">Recherche</div>
-            <i class="fa-solid fa-magnifying-glass color-white hidden-icon"></i>
+          <input type="search" class="search-field" id="search" name="search" placeholder="Marseille, France" />
+          <button class="search-btn bck-blue hidden-text color-white font-bold">
+            Recherche
+          </button>
+          <button class="search-btn bck-blue color-white font-bold hidden-icon">
+
+            <i class="fa-solid fa-magnifying-glass color-white"></i>
           </button>
         </form>
       </div>
@@ -108,16 +111,16 @@
           <h2>Hébergements à Marseille</h2>
         </div>
         <div class="leasing-container flex-box flex-row">
-          <div class="cards cards-w33 bck-white">
+          <div class="cards cards-w33 cards-h200 bck-white">
             <a href="#">
               <div class="image-leasing">
                 <img class="fit-cover" src="./images/hebergements/auberge_la_canebiere_hd.jpg"
                   alt="Photo d'un lit superposé" />
               </div>
               <div class="cards-content">
-                <h3 class="padding-5">Auberge La Cannebière</h3>
-                <p class="padding-5">Nuit à partie de <strong>25€</strong></p>
-                <div class="stars padding-5">
+                <h3 class="h3-mod">Auberge La Cannebière</h3>
+                <p>Nuit à partie de <strong>25€</strong></p>
+                <div class="stars">
                   <i class="fa-solid fa-star color-blue"></i>
                   <i class="fa-solid fa-star color-blue"></i>
                   <i class="fa-solid fa-star color-blue"></i>
@@ -127,7 +130,7 @@
               </div>
             </a>
           </div>
-          <div class="cards cards-w33  bck-white">
+          <div class="cards cards-w33  cards-h200 bck-white">
             <a href="#">
               <div class="image-leasing">
                 <img class="fit-cover" src="./images/hebergements/hotel_du_port_hd.jpg"
@@ -146,7 +149,7 @@
               </div>
             </a>
           </div>
-          <div class="cards cards-w33 bck-white">
+          <div class="cards cards-w33 cards-h200 bck-white">
             <a href="#">
               <div class="image-leasing">
                 <img class="fit-cover" src="./images/hebergements/hotel_les_mouettes_hd.jpg"
@@ -211,7 +214,7 @@
               </div>
               <div class="cards-content">
                 <h3>Hôtel chez Amina</h3>
-                <p>Nuit à partie de <strong>96€</strong></pclass=>
+                <p>Nuit à partie de <strong>96€</strong></p>
                 <div class="stars">
                   <i class="fa-solid fa-star color-blue"></i>
                   <i class="fa-solid fa-star color-blue"></i>
@@ -229,13 +232,13 @@
           </a>
         </div>
       </div>
-      <div class="trend bck-grey flex-box flex-column">
+      <div class="trend bck-grey flex-box flex-column-nowrap flex-ali-center">
         <div class="trend-title flex-box flex-row flex-just-between flex-ali-center">
-          <h2>Les plus populaire</h2>
+          <h2>Les plus populaires</h2>
           <i class="fa-solid fa-star"></i>
         </div>
         <div class="trend-container flex-box flex-column">
-          <div class="cards cards-w80 cards-h150 bck-white">
+          <div class="cards cards-trend cards-w100 bck-white">
             <a href="#">
               <div class="trend-content flex-box flex-row-nowrap">
                 <div class="image-trend">
@@ -258,7 +261,7 @@
               </div>
             </a>
           </div>
-          <div class="cards cards-w80 bck-white">
+          <div class="cards cards-trend cards-w100 bck-white">
             <a href="#">
               <div class="trend-content flex-box flex-row-nowrap">
                 <div class="image-trend">
@@ -281,7 +284,7 @@
               </div>
             </a>
           </div>
-          <div class="cards cards-w80 bck-white">
+          <div class="cards cards-trend cards-w100 bck-white">
             <a href="#">
               <div class="trend-content flex-box flex-row-nowrap">
                 <div class="image-trend">
@@ -294,11 +297,11 @@
                     <p>Nuit à partie de <strong>68€</strong></p>
                   </div>
                   <div class="trend-stars">
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
+                    <i class="fa-solid fa-star color-blue"></i>
                     <i class="fa-solid fa-star color-grey"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
-                    <i class="fa-solid fa-star color-blue"></i>
                   </div>
                 </div>
               </div>
@@ -313,18 +316,18 @@
       <h2>Activités</h2>
       <div class="activities-container flex-box flex-row-nowrap">
         <div class="left flex-box flex-column flex-gap-55 flex-ali-center">
-          <div class="cards cards-w40 padding-0 cards-h400 bck-white">
+          <div class="cards cards-w45 padding-0 cards-h400 bck-white">
             <a href="#">
               <div class="image-activities img-350">
                 <img class="fit-cover" src="./images/activites/vieux_port_hd.jpg"
                   alt="Photo du vieux port de Marseille" />
               </div>
-              <div class="cards-content paddin">
+              <div class="cards-content padding-5">
                 <h3>Vieux Port</h3>
               </div>
             </a>
           </div>
-          <div class="cards cards-w40 padding-0 cards-h200 bck-white">
+          <div class="cards cards-w45 padding-0 cards-h200 bck-white">
             <a href="#">
               <div class="image-activities img-150">
                 <img class="fit-cover" src="./images/activites/fort_de_pomegues_hd.jpg"
@@ -335,7 +338,7 @@
               </div>
             </a>
           </div>
-          <div class="cards cards-w40 padding-0 bck-white">
+          <div class="cards cards-w45 padding-0 bck-white">
             <a href="#">
               <div class="image-activities img-100">
                 <img class="fit-cover" src="./images/activites/ile_de_frioul_hd.jpg" alt="Photo de l'île de Frioul" />
@@ -347,7 +350,7 @@
           </div>
         </div>
         <div class="right flex-box flex-column flex-gap-55 flex-ali-center">
-          <div class="cards cards-h400 padding-0 cards-w40 bck-white">
+          <div class="cards cards-h400 padding-0 cards-w45 bck-white">
             <a href="#">
               <div class="image-activities img-350">
                 <img class="fit-cover" src="./images/activites/parc_national_des_calanques_hd.jpg"
@@ -358,7 +361,7 @@
               </div>
             </a>
           </div>
-          <div class="cards cards-w40 padding-0 cards-h200 bck-white">
+          <div class="cards cards-w45 padding-0 cards-h200 bck-white">
             <a href="#">
               <div class="image-activities img-150">
                 <img class="fit-cover" src="./images/activites/notre_dame_de_la_garde_hd.jpg"
@@ -369,7 +372,7 @@
               </div>
             </a>
           </div>
-          <div class="cards cards-w40 padding-0 bck-white">
+          <div class="cards cards-w45 padding-0 bck-white">
             <a href="#">
               <div class="image-activities img-100">
                 <img class="fit-cover" src="./images/activites/parc_longchamp_hd.jpg"
@@ -386,8 +389,8 @@
   </main>
 
   <!-- Partie Footer -->
-  <footer class="footer-container flex-box flex-row flex-gap-70 bck-grey">
-    <div>
+  <footer class="footer-container flex-box flex-row flex-gap-150 bck-grey">
+    <div class="flex-box flex-column flex-gap-10">
       <h3>
         A propos
       </h3>
@@ -403,7 +406,7 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="flex-box flex-column flex-gap-10">
       <h3>
         Nos hébergements
       </h3>
@@ -416,7 +419,7 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="flex-box flex-column flex-gap-10">
       <h3>
         Assistance
       </h3>

@@ -97,6 +97,10 @@ main {
   align-items: center;
 }
 
+.flex-gap-10 {
+  gap: 10px;
+}
+
 .flex-gap-20 {
   gap: 20px;
 }
@@ -105,8 +109,8 @@ main {
   row-gap: 55px;
 }
 
-.flex-gap-70 {
-  gap: 70px;
+.flex-gap-150 {
+  gap: 150px;
 }
 
 /*************
@@ -147,16 +151,12 @@ main {
   margin-bottom: 10px;
 }
 
-/* TODO: improve
-    - Les padding et border de la partie recherche (pas aligné)
-*/
-
 .search-form {
   border-radius: 10px;
 }
 
 .map-icon {
-  padding: 10px;
+  padding: 12px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -167,7 +167,7 @@ main {
   border-right: none;
   border-top: 3px solid #f2f2f2;
   border-bottom: 3px solid #f2f2f2;
-  padding: 11px 7px 7px 7px;
+  padding: 12px 7px;
 }
 
 .search-btn {
@@ -247,7 +247,7 @@ main {
 }
 
 .leasing {
-  width: 70%;
+  width: 65%;
   height: 100%;
   padding: 0 20px 0 20px;
   border-radius: 20px;
@@ -276,7 +276,7 @@ main {
 *****************/
 
 .trend {
-  width: 27%;
+  width: 33%;
   height: 100%;
   border-radius: 20px;
   justify-content: space-evenly;
@@ -284,26 +284,32 @@ main {
 
 .trend-title {
   padding: 20px;
+  width: 100%;
 }
 
 .trend-container {
   align-items: center;
   gap: 20px;
+  padding: 0 10px;
 }
 
 .trend-resume {
-  padding-left: 15px;
+  padding: 0 15px;
 }
 
 .trend-resume p {
-  padding-top: 10px;
+  padding-top: 3px;
 }
 
 .image-trend img {
-  height: 120px;
-  width: 100px;
+  height: 125px;
+  width: 150px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+.cards-trend {
+  max-height: 135px;
 }
 
 /*************
@@ -337,7 +343,7 @@ main {
 }
 
 .cards-content {
-  padding: 5px 0 0 5px;
+  padding: 5px 0 5px 5px;
 }
 
 .stars {
@@ -412,17 +418,17 @@ Bug sur le flex de la partie populaire - en dessous de 1280px le flow est pas co
   padding: 0;
 }
 
-.cards-w40 {
-  width: 40%;
+.cards-w45 {
+  width: 45%;
 }
 
 .padding-5 {
   padding: 10px;
 }
 
-/****************
-*** Activités ***
-*****************/
+/*************
+*** Footer ***
+**************/
 
 footer {
   /* margin-top: 100px; */
@@ -433,9 +439,13 @@ footer {
   max-width: 1920px;
 }
 
+.footer-container li {
+  padding-top: 15px;
+}
+
 /* TODO: FIXIT
           
         Bug H3 sur les écrans intermédiaire dans la partie activities
         
         Faire la partie responsive d'activities et footer
-        */
+*/
