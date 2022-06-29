@@ -407,11 +407,11 @@ Bug sur le flex de la partie populaire - en dessous de 1280px le flow est pas co
 }
 
 .cards-h200 {
-  height: 200px;
+  max-height: 220px;
 }
 
 .cards-h400 {
-  height: 400px;
+  max-height: 420px;
 }
 
 .padding-0 {
