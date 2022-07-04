@@ -1,0 +1,11 @@
+.image-trend {
+  width: 30%;
+}
+
+.image-trend img {
+  max-width: 100px;
+}
+
+.pad-l-20 h3 {
+  font-size: 14px;
+}

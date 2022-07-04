@@ -92,8 +92,12 @@ main {
   gap: 60px;
 }
 
+.image-trend {
+  width: 30%;
+}
+
 .image-trend img {
-  width: 100px;
+  max-width: 80px;
 }
 
 .trend-container {
@@ -124,13 +128,6 @@ main {
   width: 40%;
 }
 
-/* TODO: FIXIT
-    
-    - Hébergement à Marseille:
-      - Auberge de la cannebière overflow présent
-    - Les plus populaires
-      - height pas conforme
-      - pb d'overflow --> réduire width img
-    - Activités
-      - Parc national des calanques overflow présent
-*/
+.cards-h125 {
+  height: 125px;
+}

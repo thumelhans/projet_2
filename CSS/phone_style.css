@@ -121,6 +121,14 @@ main {
   width: 100%;
 }
 
+.image-trend {
+  width: 25%;
+}
+
+.image-trend img {
+  max-width: 100%;
+}
+
 .cards-w80 {
   width: 100%;
 }
@@ -143,6 +151,10 @@ main {
 
 .cards-w33 {
   width: 100%;
+}
+
+.cards-h125 {
+  height: 125px;
 }
 
 /****************

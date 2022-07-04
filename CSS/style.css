@@ -354,11 +354,9 @@ main {
   padding: 0 0 10px 15px;
 }
 
-/* TODO: Fix this 
-
-Bug sur le flex de la partie populaire - en dessous de 1280px le flow est pas comme il faut 
-
-*/
+.cards-h40 {
+  height: 40%;
+}
 
 /****************
 *** Activités ***
@@ -404,6 +402,10 @@ Bug sur le flex de la partie populaire - en dessous de 1280px le flow est pas co
 
 .img-100 img {
   height: 100px;
+}
+
+.cards-h125 {
+  height: 125px;
 }
 
 .cards-h200 {

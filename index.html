@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/2247cba2a3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" media="only screen and (max-width:1400px)" href="./CSS/medium_style.css" />
   <link rel="stylesheet" media="only screen and (max-width:992px)" href="./CSS/tab_style.css" />
   <link rel="stylesheet" media="only screen and (max-width: 768px)" href="./CSS/phone_style.css" />
   <title>Index | Booki</title>
@@ -26,7 +27,7 @@
         </div>
         <ul class="nav-menu flex-box flex-ali-center">
           <li class="nav-links">
-            <a href="#leasing-trend">Hébergements</a>
+            <a href="#leasing-trend-lodging">Hébergements</a>
           </li>
           <li class="nav-links">
             <a href="#activities">Activités</a>
@@ -108,7 +109,7 @@
     <section id="leasing-trend" class="flex-box flex-row flex-ali-center flex-just-between">
       <div class="leasing bck-grey flex-box flex-column-nowrap">
         <div class="leasing-title">
-          <h2>Hébergements à Marseille</h2>
+          <h2 id="leasing-trend-lodging">Hébergements à Marseille</h2>
         </div>
         <div class="leasing-container flex-box flex-row">
           <div class="cards cards-w33 bck-white">
@@ -136,10 +137,12 @@
                 <img class="fit-cover" src="./images/hebergements/hotel_du_port_hd.jpg"
                   alt="Photo d'une chambre avec un double lit" />
               </div>
-              <div class="cards-content flex-box flex-column flex-just-between">
+              <div class="cards-content cards-h40 flex-box flex-column flex-just-between">
+                <div class="cards-text">
 
-                <h3>Hôtel du port</h3>
-                <p>Nuit à partie de <strong>52€</strong></p>
+                  <h3>Hôtel du port</h3>
+                  <p>Nuit à partie de <strong>52€</strong></p>
+                </div>
 
                 <div class="stars">
                   <i class="fa-solid fa-star color-blue"></i>
@@ -176,9 +179,12 @@
                 <img class="fit-cover" src="./images/hebergements/hotel_de_la_mer_hd.jpg"
                   alt="Photo d'un lit double avec une peinture représentant la mer au dessus" />
               </div>
-              <div class="cards-content">
-                <h3>Hôtel de la mer</h3>
-                <p>Nuit à partie de <strong>46€</strong></p>
+              <div class="cards-content cards-h40 flex-box flex-column flex-just-between">
+                <div class="cards-text">
+
+                  <h3>Hôtel de la mer</h3>
+                  <p>Nuit à partie de <strong>46€</strong></p>
+                </div>
                 <div class="stars">
                   <i class="fa-solid fa-star color-blue"></i>
                   <i class="fa-solid fa-star color-blue"></i>
@@ -214,9 +220,11 @@
                 <img class="fit-cover" src="./images/hebergements/hotel_chez_amina_hd.jpg"
                   alt="Photo d'une chambre simple avec une fenêtre" />
               </div>
-              <div class="cards-content">
-                <h3>Hôtel chez Amina</h3>
-                <p>Nuit à partie de <strong>96€</strong></p>
+              <div class="cards-content cards-h40 flex-box flex-column flex-just-between">
+                <div class="cards-text">
+                  <h3>Hôtel chez Amina</h3>
+                  <p>Nuit à partie de <strong>96€</strong></p>
+                </div>
                 <div class="stars">
                   <i class="fa-solid fa-star color-blue"></i>
                   <i class="fa-solid fa-star color-blue"></i>
@@ -247,7 +255,7 @@
                   <img class="fit-cover" src="./images/hebergements/hotel_le_soleil_du_matin_hd.jpg"
                     alt="Photo de plusieurs lits superposés en bois" />
                 </div>
-                <div class="cards-content pad-l-20 flex-box flex-column flex-just-between">
+                <div class="cards-content cards-h125 pad-l-20 flex-box flex-column flex-just-between">
                   <div class="trend-resume">
                     <h3>Hôtel Le soleil du matin</h3>
                     <p>Nuit à partie de <strong>128€</strong></p>
@@ -267,10 +275,10 @@
             <a href="#">
               <div class="trend-content flex-box flex-row-nowrap">
                 <div class="image-trend">
-                  <img class="fit-cover" src="./images/hebergements/au_coeur_de_l_eau_chambres_d_hotes_hd.jpg"
+                  <img class="fit-cover" src="./images/hebergements/au_coeur_de_l_eau_chambres_d_hotes_uhd.jpg"
                     alt="Photo de plusieurs lits superposés en bois" />
                 </div>
-                <div class="cards-content pad-l-20 flex-box flex-column flex-just-between">
+                <div class="cards-content cards-h125 pad-l-20 flex-box flex-column flex-just-between">
                   <div class="trend-resume">
                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                     <p>Nuit à partie de <strong>71€</strong></p>
@@ -290,10 +298,10 @@
             <a href="#">
               <div class="trend-content flex-box flex-row-nowrap">
                 <div class="image-trend">
-                  <img class="fit-cover" src="./images/hebergements/hotel_tout_bleu_et_blanc_hd.jpg"
+                  <img class="fit-cover" src="./images/hebergements/hotel_tout_bleu_et_blanc_uhd.jpg"
                     alt="Photo de plusieurs lits superposés en bois" />
                 </div>
-                <div class="cards-content pad-l-20 flex-box flex-column flex-just-between">
+                <div class="cards-content cards-h125 pad-l-20 flex-box flex-column flex-just-between">
                   <div class="trend-resume">
                     <h3>Hôtel Tout bleu et Blanc</h3>
                     <p>Nuit à partie de <strong>68€</strong></p>
@@ -318,7 +326,7 @@
       <h2>Activités</h2>
       <div class="activities-container flex-box flex-row-nowrap">
         <div class="left flex-box flex-column flex-gap-55 flex-ali-center">
-          <div class="cards cards-w45 padding-0 cards-h400 bck-white">
+          <div class="cards cards-w45 cards-h400 padding-0 cards-h400 bck-white">
             <a href="#">
               <div class="image-activities img-350">
                 <img class="fit-cover" src="./images/activites/vieux_port_hd.jpg"
